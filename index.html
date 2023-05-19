@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week5_Homework: Forecast</title>
+
+    <link href="src/main.css" 
+          rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+          rel="stylesheet" 
+          integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+          crossorigin="anonymous">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" 
+            integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <div class="container">
+     
+    <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-6" id="current-date">
+            Now:
+        </div>
+
+        <div class="col-sm-2">
+            Next:
+        </div>
+
+        <div class="col-sm-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-3">
+           <p> 
+               <span class="emoji">
+                ☀️ 
+               </span>
+               <br/>
+               Sunny
+           </p>
+        </div>
+
+        <div class="col-sm-3">
+            <p>  
+               <span class="grades" id="city-grades"> 15 </span>
+                <span class="simbol">°</span>               
+               <a href="#" id="celsius" class="format"> C </a> 
+                | 
+               <a href="#" id="fahrenheit" class="format"> F </a>
+               <br/>
+               <span id="current-city">Turin</span>
+            </p> 
+        </div>
+
+        <div class="col-sm-2">
+            <ul class="list-group ">
+              <li class="list-group-item border-0 next">🌥️ Mon 6°/18° </li>
+              <li class="list-group-item border-0 next">🌥️ Tue 9°/18°</li>
+              <li class="list-group-item border-0 next">🌧️ Wed 10°/21°</li>
+              <li class="list-group-item border-0 next">🌩️ Thu 9°/19°</li>
+              <li class="list-group-item border-0 next">🌧️ Fri 6°/17°</li>
+            </ul>
+        </div>
+
+        <div class="col-sm-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-6">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Change City..." aria-label="Search" id="city-form">
+            </form>
+        </div>
+
+        <div class="col-sm-2">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="city-button">
+                Change
+            </button>
+        </div>
+
+        <div class="col-sm-2"></div>
+    </div>
+  </div>  
+  
+  <script src="src/index.js">
+    
+  </script>
+
+</body>
+</html>

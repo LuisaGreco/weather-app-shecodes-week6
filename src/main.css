@@ -1,0 +1,35 @@
+
+.container {
+ padding: 5px;
+ margin-top: 150px;
+}
+
+.next {
+  font-size: 10pt;
+  padding-left: 0;
+}
+
+p {
+  font-size: 20pt;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.emoji , .grades, .simbol {
+  font-size: 50pt;
+}
+
+#current-date {
+  font-weight: bold;
+}
+
+.format {
+  font-size: 12pt;
+  border: 0;
+  background-color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
